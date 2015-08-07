@@ -1,0 +1,103 @@
+Trials:10	Iterations: 100 per trial 		Depth: 15	Tree Nodes: 32768	Size of node: 32 Bytes
+
+1)Using 'new':
+
+0.087086916
+0.088768959
+0.087540865
+0.087390184 
+0.087630987
+0.087514162
+0.087709188
+0.086951017
+0.086782932
+0.087326050 
+
+Avg:	0.087470126
+
+
+
+2)Random:
+
+0.137768030
+0.137140989
+0.137573957
+0.143066883
+0.146222830
+0.138425112 
+0.139268875
+0.138756990
+0.146648884
+0.135983944 
+
+Avg:	0.140085649
+
+
+
+3)Depth-First:
+
+0.071255922 
+0.069931030
+0.070986032
+0.071398020
+0.071434975
+0.071461916
+0.071154833
+0.071362019
+0.071902037
+0.071484804
+
+Avg:	0.071237159
+
+
+Trials:10	Iterations: 100 per trial 		Depth: 15	Tree Nodes: 32768	Size of node: 64 Bytes
+
+1)Using 'new' Avg:	0.120471001
+2)Random      Avg:	0.389796019 
+3)Depth-First Avg:	0.082406044
+
+
+Trials:10	Iterations: 100 per trial 		Depth: 15	Tree Nodes: 32768	Size of node: 104 Bytes
+
+1)Using 'new' Avg:	0.148170948
+2)Random      Avg:	0.360260010  
+3)Depth-First Avg:	0.111492872 
+
+
+Trials:10	Iterations: 100 per trial 		Depth: 15	Tree Nodes: 32768	Size of node: 184 Bytes
+
+1)Using 'new' Avg:	0.300864220
+2)Random      Avg:	0.373230219  
+3)Depth-First Avg:	0.234559774
+
+
+Trials:10	Iterations: 100 per trial 		Depth: 15	Tree Nodes: 32768	Size of node: 344 Bytes
+
+1)Using 'new' Avg:	0.342875004
+2)Random      Avg:	0.382586002  
+3)Depth-First Avg:	0.296393871
+
+
+Trials:10	Iterations: 100 per trial 		Depth: 20	Tree Nodes: 1048576	Size of node: 32 Bytes
+
+1)Using 'new' Avg:	3.002902031
+2)Random      Avg:	15.183759928  
+3)Depth-First Avg:	2.376513004
+
+ 
+Trials:10	Iterations: 100 per trial 		Depth: 20	Tree Nodes: 1048576	Size of node: 424 Bytes
+
+1)Using 'new' Avg:	14.704550028
+2)Random      Avg:	29.456160069   
+3)Depth-First Avg:	12.455258846
+
+
+Conclusion:
+
+Performance is best with Depth-First allocation, followed by allocation using 'new' and the worst is random allocation.
+Depth-First allocation is about 3.5-4 times as fast as Random allocation in most cases.
+
+Depth-First is about 25-30% faster than allocation using 'new ' on an average.
+
+This result is consistent with any size of the nodes. As the number of nodes is increased, performance difference is more observable.
+

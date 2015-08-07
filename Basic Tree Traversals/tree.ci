@@ -1,0 +1,7 @@
+mainmodule tree
+{
+  mainchare Main
+  {
+    entry Main(CkArgMsg *m);
+  };
+};
