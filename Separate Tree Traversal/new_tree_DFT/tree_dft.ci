@@ -1,0 +1,8 @@
+mainmodule tree_dft
+{
+  mainchare main
+  {
+    entry main(CkArgMsg *m);
+  };
+};
+	

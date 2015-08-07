@@ -1,0 +1,8 @@
+mainmodule tree_random
+{
+  mainchare main
+  {
+    entry main(CkArgMsg *m);
+  };
+};
+	

@@ -1,0 +1,7 @@
+mainmodule tree_template
+{
+  mainchare Main
+  {
+    entry Main(CkArgMsg *m);
+  };
+};

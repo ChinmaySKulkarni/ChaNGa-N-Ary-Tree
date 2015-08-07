@@ -1,0 +1,9 @@
+mainmodule tree_dynamic
+{
+  mainchare main
+  {
+    entry main(CkArgMsg *m);
+  };
+
+};
+	
